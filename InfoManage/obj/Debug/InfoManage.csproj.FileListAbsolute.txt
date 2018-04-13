@@ -1,0 +1,12 @@
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\bin\Debug\InfoManage.exe.config
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\bin\Debug\InfoManage.exe
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\bin\Debug\InfoManage.pdb
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.csprojResolveAssemblyReference.cache
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.FrmLogin.resources
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.Properties.Resources.resources
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.csproj.GenerateResource.cache
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.csproj.CoreCompileInputs.cache
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.exe
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.pdb
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.FrmMain.resources
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.FrmEdit.resources
