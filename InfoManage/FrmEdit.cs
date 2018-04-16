@@ -45,13 +45,13 @@ namespace InfoManage
             string stunumb = inputStuNo.Text;
             string address = inputAddress.Text;
             //string interest = inputInteres.CheckedItems;
-            string interest = "";
+            /*string interest = "";
 
 
             for (int i = 0; i < inputInteres.CheckedItems.Count; i++)
             {
                 interest += inputInteres.CheckedItems[i].ToString()+",";
-            }
+            }*/
 
 
             //MessageBox.Show(name + "  " + gender + "  " + age + "  " + stunumb + "  "+ address +"  "+ interest,"输入的是");
@@ -68,7 +68,7 @@ namespace InfoManage
             dr["colage"] = age;
             dr["colnum"] = stunumb;
             dr["coladd"] = address;
-            dr["colhob"] = interest;
+            //dr["colhob"] = interest;
 
             FrmMain.dt.Rows.Add(dr);
 
@@ -79,6 +79,56 @@ namespace InfoManage
         private void cancelsign_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void FrmEdit_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputStuNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 密保问题_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputAge_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

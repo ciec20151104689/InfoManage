@@ -31,15 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.dgvInfo = new System.Windows.Forms.DataGridView();
-            this.ColName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColStuNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tsbtnedt = new System.Windows.Forms.ToolStripButton();
+            this.tsbtndel = new System.Windows.Forms.ToolStripButton();
             this.ColAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColHobby = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColStuNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInfo = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).BeginInit();
             this.SuspendLayout();
@@ -48,8 +47,8 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3});
+            this.tsbtnedt,
+            this.tsbtndel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -65,21 +64,53 @@
             this.toolStripButton1.Text = "添加";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // toolStripButton2
+            // tsbtnedt
             // 
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(52, 22);
-            this.toolStripButton2.Text = "修改";
+            this.tsbtnedt.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnedt.Image")));
+            this.tsbtnedt.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnedt.Name = "tsbtnedt";
+            this.tsbtnedt.Size = new System.Drawing.Size(52, 22);
+            this.tsbtnedt.Text = "修改";
+            this.tsbtnedt.Click += new System.EventHandler(this.tsbtnedt_Click);
             // 
-            // toolStripButton3
+            // tsbtndel
             // 
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(52, 22);
-            this.toolStripButton3.Text = "删除";
+            this.tsbtndel.Image = ((System.Drawing.Image)(resources.GetObject("tsbtndel.Image")));
+            this.tsbtndel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtndel.Name = "tsbtndel";
+            this.tsbtndel.Size = new System.Drawing.Size(52, 22);
+            this.tsbtndel.Text = "删除";
+            this.tsbtndel.Click += new System.EventHandler(this.tsbtndel_Click);
+            // 
+            // ColAddress
+            // 
+            this.ColAddress.DataPropertyName = "coladd";
+            this.ColAddress.HeaderText = "籍贯";
+            this.ColAddress.Name = "ColAddress";
+            // 
+            // ColStuNum
+            // 
+            this.ColStuNum.DataPropertyName = "colnum";
+            this.ColStuNum.HeaderText = "学号";
+            this.ColStuNum.Name = "ColStuNum";
+            // 
+            // ColAge
+            // 
+            this.ColAge.DataPropertyName = "colage";
+            this.ColAge.HeaderText = "年龄";
+            this.ColAge.Name = "ColAge";
+            // 
+            // ColGender
+            // 
+            this.ColGender.DataPropertyName = "colgen";
+            this.ColGender.HeaderText = "性别";
+            this.ColGender.Name = "ColGender";
+            // 
+            // ColName
+            // 
+            this.ColName.DataPropertyName = "colname";
+            this.ColName.HeaderText = "姓名";
+            this.ColName.Name = "ColName";
             // 
             // dgvInfo
             // 
@@ -89,50 +120,14 @@
             this.ColGender,
             this.ColAge,
             this.ColStuNum,
-            this.ColAddress,
-            this.ColHobby});
+            this.ColAddress});
             this.dgvInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvInfo.Location = new System.Drawing.Point(0, 25);
             this.dgvInfo.Name = "dgvInfo";
             this.dgvInfo.RowTemplate.Height = 23;
+            this.dgvInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfo.Size = new System.Drawing.Size(800, 425);
             this.dgvInfo.TabIndex = 1;
-            // 
-            // ColName
-            // 
-            this.ColName.DataPropertyName = "colname";
-            this.ColName.HeaderText = "姓名";
-            this.ColName.Name = "ColName";
-            // 
-            // ColGender
-            // 
-            this.ColGender.DataPropertyName = "colgen";
-            this.ColGender.HeaderText = "性别";
-            this.ColGender.Name = "ColGender";
-            // 
-            // ColAge
-            // 
-            this.ColAge.DataPropertyName = "colage";
-            this.ColAge.HeaderText = "年龄";
-            this.ColAge.Name = "ColAge";
-            // 
-            // ColStuNum
-            // 
-            this.ColStuNum.DataPropertyName = "colnum";
-            this.ColStuNum.HeaderText = "学号";
-            this.ColStuNum.Name = "ColStuNum";
-            // 
-            // ColAddress
-            // 
-            this.ColAddress.DataPropertyName = "coladd";
-            this.ColAddress.HeaderText = "籍贯";
-            this.ColAddress.Name = "ColAddress";
-            // 
-            // ColHobby
-            // 
-            this.ColHobby.DataPropertyName = "colhob";
-            this.ColHobby.HeaderText = "兴趣";
-            this.ColHobby.Name = "ColHobby";
             // 
             // FrmMain
             // 
@@ -156,14 +151,13 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.DataGridView dgvInfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColGender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColAge;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColStuNum;
+        private System.Windows.Forms.ToolStripButton tsbtnedt;
+        private System.Windows.Forms.ToolStripButton tsbtndel;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColHobby;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColStuNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColAge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColGender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColName;
+        private System.Windows.Forms.DataGridView dgvInfo;
     }
 }

@@ -10,3 +10,4 @@ C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.exe
 C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.pdb
 C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.FrmMain.resources
 C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.FrmEdit.resources
+C:\Users\wwwli\source\repos\InfoManage\InfoManage\obj\Debug\InfoManage.Frmupdate.resources
