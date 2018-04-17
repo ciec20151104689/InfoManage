@@ -13,6 +13,7 @@ namespace InfoManage
     public partial class FrmEdit : Form
     {
         DataGridView dgvInfo;
+        
         public FrmEdit()
         {
             InitializeComponent();

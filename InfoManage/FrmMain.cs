@@ -13,6 +13,7 @@ namespace InfoManage
 
     public partial class FrmMain : Form
     {
+        int index;
         public static DataTable dt = new DataTable();
         public FrmMain()
         {
@@ -32,6 +33,11 @@ namespace InfoManage
             //dt.Columns.Add(dc6);
             InitializeComponent();
         }
+        /*public FrmMain(int _index)
+        {
+            index = _index;
+            InitializeComponent();
+        }*/
 
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -72,7 +78,7 @@ namespace InfoManage
             if (rs == DialogResult.Yes)
             {
                 //dgvInfo.Rows.Remove(dgvInfo.SelectedRows[0]);
-                int index = dgvInfo.SelectedRows[0].Index;
+                index = dgvInfo.SelectedRows[0].Index;
                 FrmMain.dt.Rows.RemoveAt(index);
                 dgvInfo.DataSource = FrmMain.dt;
             }

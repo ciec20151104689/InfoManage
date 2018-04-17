@@ -16,5 +16,10 @@ namespace InfoManage
         {
             InitializeComponent();
         }
+
+        private void FrmGetPassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
